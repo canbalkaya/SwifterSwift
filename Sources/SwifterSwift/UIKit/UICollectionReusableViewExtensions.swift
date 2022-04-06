@@ -14,7 +14,8 @@ public extension UICollectionReusableView {
     
     /// SwifterSwift: UICollectionViewCell or UICollectionReusableView reuseIdentifier.
     static var reuseIdentifier: String {
-        return String(describing: Self.self)
+        /// Returns the same UICollectionViewCell class name.
+        String(describing: Self.self)
     }
 }
 
