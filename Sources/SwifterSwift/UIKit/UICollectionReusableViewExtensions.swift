@@ -8,10 +8,14 @@
 
 import UIKit
 
-extension UICollectionReusableView {
+#if canImport(UIKit) && os(iOS)
+
+public extension UICollectionReusableView {
     
     /// SwifterSwift: UICollectionViewCell or UICollectionReusableView reuseIdentifier.
     static var reuseIdentifier: String {
         return String(describing: Self.self)
     }
 }
+
+#endif
